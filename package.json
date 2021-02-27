@@ -4,6 +4,7 @@
   "description": "\u0016\u0016homepage for studioON",
   "main": "src/index.html",
   "scripts": {
+    "start": "npx live-server studioon/",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
