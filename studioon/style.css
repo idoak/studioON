@@ -1,15 +1,17 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700;900&display=swap');
 
 * {
 box-sizing: border-box;
 }
 
 :root {
+--color-primary: #ffc500;
 font-family: 'Montserrat', sans-serif;    
 font-size: 16px;
 }
 
 body{
+padding-top: 7.75rem;    
 margin: 0;
 }
 
@@ -19,32 +21,58 @@ list-style: none;
 padding-left: 0%;
 }
 
-li {
-    margin-right: 0.625rem; 
-    
-}
 .navbar {
-position: fixed;
-display: grid;
-grid-template-columns: 1fr 9fr;
-align-items: center;
-top: 0;
-left: 0;
-
-
-width: 100vw;
-padding: 0 1rem;
-
-background-color: rgb(0, 0, 0);
-color: #ffffff;
-
+    position: fixed;
+    display: grid;
+    grid-template-columns: 1fr 9fr;
+    align-items: center;
+    top: 0;
+    left: 0;
+    
+    
+    width: 100vw;
+    height: 7.75rem;
+    padding: 0 1rem;
+    
+    background-color: rgb(0, 0, 0);
+    color: #ffffff;
+    
 }
 
 .navbar__links {
-justify-self: end;
+    justify-self: end;
+}
+
+.navbar__links li {
+    font-size: .875rem;
+    margin-right: 3rem; 
+    text-transform: uppercase;
 }
 
 .navbar__links a {
-color: white;
-text-decoration: none;
+    font-weight: 300;
+    color: white;
+    text-decoration: none;
+}
+
+.navbar__links a:hover {
+    color: var(--color-primary);
+}
+
+.logo-studion {
+    line-height: 1ch;
+    font-size: 38px;
+    text-align: right;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
+.logo-studion_subtitle {
+    font-size: .875rem;
+    font-weight: 300;
+    float: right;
+}
+
+.copy--primary {
+    color: var(--color-primary)
 }
